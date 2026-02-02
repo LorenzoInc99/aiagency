@@ -707,9 +707,10 @@ img {
 
 .booking-embed-wrap {
   width: 100%;
-  max-width: 800px;
+  max-width: 1100px;
+  min-width: 900px;
   margin: 0 auto;
-  min-height: 650px;
+  min-height: 700px;
   border-radius: 12px;
   overflow: hidden;
   background: var(--surface);
@@ -717,7 +718,18 @@ img {
 
 .booking-embed-wrap iframe {
   display: block;
-  min-height: 650px;
+  width: 100%;
+  min-width: 900px;
+  min-height: 700px;
+}
+
+@media (max-width: 960px) {
+  .booking-embed-wrap {
+    min-width: 100%;
+  }
+  .booking-embed-wrap iframe {
+    min-width: 100%;
+  }
 }
 
 .cta-buttons {
